@@ -1,0 +1,172 @@
+@font-face {
+  font-family: myFont;
+  src: url("./Qeinsha.otf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: myFont;
+}
+html,
+body {
+  background: #000274;
+  text-transform: uppercase;
+}
+
+#hero {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  height: 100vh;
+  object-fit: cover;
+  pointer-events: none;
+  z-index: -1;
+  opacity: 0.85;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  padding: 1em;
+  display: flex;
+}
+
+.nav-items {
+  flex: 4;
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+.nav-items .links {
+  display: flex;
+  gap: 2em;
+  align-items: center;
+}
+
+.nav-subitems {
+  width: 100%;
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2em;
+}
+
+.nav-subitems .toggle {
+  width: 3em;
+  height: 3rem;
+  cursor: pointer;
+}
+
+.subitems-link {
+  display: flex;
+  gap: 2em;
+}
+
+nav .link a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+}
+
+nav .logo .link a {
+  font-size: 35px;
+}
+
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  background: rgb(0, 0, 0);
+  clip-path: polygon(
+    49.75% 49.75%,
+    50.25% 49.75%,
+    50.25% 49.75%,
+    49.75% 49.75%
+  );
+  opacity: 0;
+}
+
+.logo .link a {
+  text-transform: uppercase;
+  font-size: 35px;
+  color: white;
+  text-decoration: none;
+}
+
+.toggle {
+  width: 80px;
+}
+
+.close-btn {
+  position: relative;
+  top: -0.5em;
+  width: 50px;
+  height: 40px;
+}
+
+.close-btn img {
+  height: 40px;
+  object-fit: cover;
+}
+
+p {
+  color: white;
+}
+.col {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+}
+
+.col .logo,
+.col .tagline {
+  flex: 2;
+}
+
+.col .tagline {
+  display: flex;
+  gap: 7em;
+  padding: 0.76em 0;
+}
+.col .links {
+  flex: 3;
+}
+
+.links.flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.link a {
+  text-decoration: none;
+  color: white;
+  font-size: 60px;
+}
+
+.toggle,
+.close-btn {
+  cursor: pointer;
+}
+
+.divider {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1.5px;
+  height: 0%;
+  background-color: white;
+}
